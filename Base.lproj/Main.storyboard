@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-wz-X4j">
-                                <rect key="frame" x="20" y="58" width="293" height="176"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-wz-X4j">
+                                <rect key="frame" x="29" y="80" width="263" height="215"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgA-5k-dFB">
-                                <rect key="frame" x="25" y="395" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgA-5k-dFB">
+                                <rect key="frame" x="29" y="395" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OutLine">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,7 +33,7 @@
                                     <action selector="outlineBodySelection" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J7F-BL-N5r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYd-SX-9dU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYd-SX-9dU">
                                 <rect key="frame" x="226" y="395" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="UnOutLIne">
@@ -43,8 +43,8 @@
                                     <action selector="unoutlineBodySelection" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VUT-xy-d94"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOo-9W-pqA">
-                                <rect key="frame" x="92" y="311" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOo-9W-pqA">
+                                <rect key="frame" x="101" y="311" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
@@ -54,10 +54,13 @@
                                     <action selector="changeBodySelectionToMatchBackgroundOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G5R-GA-fO8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zme-wu-UHx">
-                                <rect key="frame" x="20" y="311" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zme-wu-UHx">
+                                <rect key="frame" x="29" y="311" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="FIQ-Bh-Dpv"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -65,7 +68,7 @@
                                     <action selector="changeBodySelectionToMatchBackgroundOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nGJ-Kj-euC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9c-x5-bsN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9c-x5-bsN">
                                 <rect key="frame" x="164" y="311" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,7 +79,7 @@
                                     <action selector="changeBodySelectionToMatchBackgroundOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m6J-p6-ZVc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMW-9P-ucP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMW-9P-ucP">
                                 <rect key="frame" x="236" y="311" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,7 +90,7 @@
                                     <action selector="changeBodySelectionToMatchBackgroundOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iBn-Xw-iwe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erl-z8-rNf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erl-z8-rNf">
                                 <rect key="frame" x="134" y="395" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stats">
@@ -99,6 +102,39 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="erl-z8-rNf" firstAttribute="baseline" secondItem="rgA-5k-dFB" secondAttribute="baseline" id="1CY-kU-RwF"/>
+                            <constraint firstItem="LOo-9W-pqA" firstAttribute="leading" secondItem="zme-wu-UHx" secondAttribute="trailing" constant="3" id="1I2-d5-Csk"/>
+                            <constraint firstItem="LOo-9W-pqA" firstAttribute="bottom" secondItem="zme-wu-UHx" secondAttribute="bottom" id="31S-nd-maU"/>
+                            <constraint firstItem="LOo-9W-pqA" firstAttribute="top" secondItem="Uyz-wz-X4j" secondAttribute="bottom" constant="8" symbolic="YES" id="35n-ch-e02"/>
+                            <constraint firstItem="LOo-9W-pqA" firstAttribute="bottom" secondItem="v9c-x5-bsN" secondAttribute="bottom" id="3EF-0Y-OJE"/>
+                            <constraint firstItem="Uyz-wz-X4j" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="6" id="3EF-gC-TaO"/>
+                            <constraint firstItem="BYd-SX-9dU" firstAttribute="baseline" secondItem="erl-z8-rNf" secondAttribute="baseline" id="6Pa-Qn-Q6X"/>
+                            <constraint firstItem="NMW-9P-ucP" firstAttribute="top" secondItem="Uyz-wz-X4j" secondAttribute="bottom" constant="8" symbolic="YES" id="6vh-IY-SZu"/>
+                            <constraint firstItem="zme-wu-UHx" firstAttribute="leading" secondItem="Uyz-wz-X4j" secondAttribute="leading" id="84R-O9-1Qc"/>
+                            <constraint firstItem="NMW-9P-ucP" firstAttribute="leading" secondItem="v9c-x5-bsN" secondAttribute="trailing" constant="8" symbolic="YES" id="Cii-3p-PJr"/>
+                            <constraint firstItem="erl-z8-rNf" firstAttribute="leading" secondItem="rgA-5k-dFB" secondAttribute="trailing" constant="55" id="Ekr-3o-UES"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="width" secondItem="zme-wu-UHx" secondAttribute="width" id="KqN-hL-WwA"/>
+                            <constraint firstItem="NMW-9P-ucP" firstAttribute="baseline" secondItem="zme-wu-UHx" secondAttribute="baseline" id="L5L-pw-8ng"/>
+                            <constraint firstItem="BYd-SX-9dU" firstAttribute="leading" secondItem="erl-z8-rNf" secondAttribute="trailing" constant="56" id="LFz-BG-0L5"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="width" secondItem="NMW-9P-ucP" secondAttribute="width" id="OMH-Ua-U2U"/>
+                            <constraint firstAttribute="trailing" secondItem="NMW-9P-ucP" secondAttribute="trailing" constant="20" symbolic="YES" id="TWB-bQ-5Gg"/>
+                            <constraint firstItem="NMW-9P-ucP" firstAttribute="trailing" secondItem="BYd-SX-9dU" secondAttribute="trailing" id="Vpj-2n-e6A"/>
+                            <constraint firstItem="rgA-5k-dFB" firstAttribute="top" secondItem="zme-wu-UHx" secondAttribute="bottom" constant="20" id="ZZn-Bq-Civ"/>
+                            <constraint firstItem="NMW-9P-ucP" firstAttribute="baseline" secondItem="LOo-9W-pqA" secondAttribute="baseline" id="a8a-3F-iQR"/>
+                            <constraint firstItem="NMW-9P-ucP" firstAttribute="baseline" secondItem="v9c-x5-bsN" secondAttribute="baseline" id="g1Z-fs-QsR"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="leading" secondItem="LOo-9W-pqA" secondAttribute="trailing" constant="8" symbolic="YES" id="gaM-vw-KEF"/>
+                            <constraint firstItem="zme-wu-UHx" firstAttribute="baseline" secondItem="LOo-9W-pqA" secondAttribute="baseline" id="h1R-PM-c4i"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="baseline" secondItem="LOo-9W-pqA" secondAttribute="baseline" id="h1o-TR-Bmo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rgA-5k-dFB" secondAttribute="bottom" constant="11" id="j9B-W8-l8I"/>
+                            <constraint firstItem="zme-wu-UHx" firstAttribute="baseline" secondItem="v9c-x5-bsN" secondAttribute="baseline" id="jNk-LU-Ofc"/>
+                            <constraint firstAttribute="trailing" secondItem="Uyz-wz-X4j" secondAttribute="trailing" constant="2" id="pN1-vG-Ypy"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="bottom" secondItem="NMW-9P-ucP" secondAttribute="bottom" id="ssn-5l-eIS"/>
+                            <constraint firstItem="rgA-5k-dFB" firstAttribute="leading" secondItem="zme-wu-UHx" secondAttribute="leading" id="uma-FP-7gl"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="top" secondItem="Uyz-wz-X4j" secondAttribute="bottom" constant="8" symbolic="YES" id="wa9-1I-jrt"/>
+                            <constraint firstItem="zme-wu-UHx" firstAttribute="top" secondItem="Uyz-wz-X4j" secondAttribute="bottom" constant="8" symbolic="YES" id="zVM-nd-Fcl"/>
+                            <constraint firstItem="v9c-x5-bsN" firstAttribute="width" secondItem="LOo-9W-pqA" secondAttribute="width" id="zm9-87-t6l"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="CS193" id="Rtd-St-CTU"/>
